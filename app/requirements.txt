@@ -1,6 +1,15 @@
-fastapi==0.109.1
+fastapi==0.110.0
 uvicorn==0.23.2
+
+# Use pydantic 1.x because your code depends on it
 pydantic==1.10.9
-vosk
+
+# Vosk STT engine (this version builds correctly on Render)
+vosk==0.3.45
+
+# Audio handling
 pydub==0.25.1
 
+# Needed for audio decoding
+ffmpeg-python==0.2.0
+python-multipart==0.0.6
