@@ -1,0 +1,5 @@
+fastapi==0.109.1
+uvicorn==0.23.2
+pydantic==1.10.9
+vosk==0.3.52
+pydub==0.25.1
