@@ -11,7 +11,7 @@ def root():
     return {"message": "Backend working!"}
 @app.get("/test")
 def test_connection():
-    print("Flutter called /test 🎉")
+    print("Flutter called /test ")
     return {"message": "Backend connection successful!"}
 
 '''
