@@ -14,6 +14,12 @@ def test_connection():
     print("Flutter called /test ")
     return {"message": "Backend connection successful!"}
 
+
+@app.get("/audio/upload")
+def audio_upload():
+    print("Audio upload endpoint is available.")
+    return {"message": "Audio upload endpoint is available."}   
+
 '''
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
