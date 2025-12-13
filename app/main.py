@@ -9,10 +9,7 @@ app.include_router(audio.router)
 @app.get("/")
 def root():
     return {"message": "Backend working!"}
-@app.get("/test")
-def test_connection():
-    print("Flutter called /test ")
-    return {"message": "Backend connection successful!"}
+
 
 
 @app.get("/audio/upload")
