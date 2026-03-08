@@ -40,7 +40,7 @@ async def upload_audio(file: UploadFile = File(...)):
         loop = asyncio.get_running_loop()
         transcript = await loop.run_in_executor(executor, local_stt, audio_bytes)
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail="Stupid thing doesnt work")
 
     is_scam = detect_scam(transcript or "")
 
